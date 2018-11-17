@@ -30,6 +30,12 @@ This project would provide a RESTful endpoint that accept initial URL and return
 
 The project should be able to serve shortened URL and redirect to initial URL.
 
+Example of json of post to localhost:4000/
+```
+{
+    "url":"www.google.com"
+}
+```
 
 ## Goal 2
 
