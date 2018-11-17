@@ -10,4 +10,5 @@ COPY . /app
 WORKDIR /app
 
 RUN mix deps.get
+
 EXPOSE 4000
