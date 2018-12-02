@@ -14,11 +14,10 @@ defmodule UrlShortenerWeb.Router do
   end
 
   scope "/", UrlShortenerWeb do
-    pipe_through :browser
+    pipe_through :api
 
-    get "/", PageController, :index
-    get "/url/:url", PageController, :url
-    get "/re/:redirect_url", PageController, :redirect_url
+    post "/", PageController, :url
+    get "/:redirect_url", PageController, :redirect_url
   end
 
   # Other scopes may use custom stacks.
